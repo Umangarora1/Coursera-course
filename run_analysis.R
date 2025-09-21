@@ -44,9 +44,9 @@ clean_names <- function(nm) {
 names(mean_std) <- clean_names(names(mean_std))
 
 final_data <- mean_std %>%
-  select(-Code) %>%                              # Code is redundant after Activity join
+  select(-Code) %>%                              
   group_by(Subject, Activity) %>%
-  summarise(across(where(is.numeric), mean),     # average each numeric sensor column
+  summarise(across(where(is.numeric), mean),     
             .groups = "drop")
 
 write.table(final_data, "FinalData.txt", row.names = FALSE)

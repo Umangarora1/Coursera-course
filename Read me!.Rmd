@@ -1,0 +1,23 @@
+# Course Project
+
+This project uses smartphone accelerometer and gyroscope data to create a tidy dataset. The aim is to summarize the average of each mean and standard deviation measurement for each subject and activity.
+
+## Files included
+
+-   `run_analysis.R` — script that downloads, cleans, and processes the data\
+-   `FinalData.txt` — tidy data set output by the script\
+-   `CodeBook.md` — describes the variables, data, and cleaning steps
+
+## How to run
+
+1.  Place the unzipped data folder **UCI HAR Dataset** in your working directory.\
+2.  Open and run the `run_analysis.R` script in RStudio (e.g., using **Source**).\
+3.  The script will create the file `FinalData.txt` in your working directory.
+
+## Notes
+
+-   The script assumes the data folder is named exactly **UCI HAR Dataset**.
+
+## Source
+
+[Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)

@@ -1,0 +1,40 @@
+# CodeBook.md
+
+## Overview
+
+This data contains measurements from the accelerometer and gyroscope of Samsung Galaxy S smartphones. The data was collected from 30 subjects performing 6 activities. The aim was to create a tidy data set with the average of each mean and standard deviation measurement for each activity and subject.
+
+---
+
+## Files
+
+- **FinalData.txt** — the output file, with averages by subject and activity.  
+- **run_analysis.R** — performs data loading, cleaning, and creation of the tidy data set.
+
+---
+
+## Variables in FinalData.txt
+
+| Variable Name | Description |
+|--------------|-------------|
+| Subject      | Identifies the participant |
+| Code         | Numeric code for activity |
+| Activity     | Descriptive activity name |
+| Other columns| Average of sensor measurements on mean and standard deviation. These include accelerometer and gyroscope signals measured in time and frequency domains along x, y, and z axes (e.g., TimeBodyAccelerometerMeanX). |
+
+---
+
+## Data Processing and Cleaning Steps
+
+1. Merged the training and test data sets into one data set.  
+2. Extracted only columns containing mean and standard deviation measurements.  
+3. Merged descriptive activity names with the numeric activity codes.  
+4. Labeled the data set with descriptive variable names by replacing abbreviations and correcting typos.  
+5. Created a second independent tidy data set with the average of each variable for each activity and each subject.  
+6. Saved the final tidy data set as "FinalData.txt".
+
+---
+
+## Source
+
+[Human Activity Recognition Using Smartphones Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
